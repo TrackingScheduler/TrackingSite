@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css" type="text/css">
+
+    </head>
+    <body>
+        
+        <h1>Tracking Schedule Test</h1>
+        <h3>Monday</h3>
+
+        <div class = "TaskList">
+            <button id="myBtn">Task 1</button>
+            <button id="task">Task 2</button>
+            <button id="task">Task 3</button>
+            <button id="task">Task 4</button>
+            <button id="task">Task 5</button>
+            <button id="task">Task 6</button>
+
+        </div>
+
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>Insert Recipe Card Here</p>
+            </div>
+        </div>
+
+
+<!-- 
+        <h1>Emotion Input</h1>
+
+        <div class="btn-group">
+        <div class="btn1"> 
+            <button>&#128543; </button>
+        </div>
+        <div class="btn2"> 
+            <button>&#128577; </button>
+        </div>
+        <div class="btn3"> 
+            <button>&#128528; </button>
+        </div>
+        <div class="btn4"> 
+            <button>&#128578; </button>
+        </div>
+        <div class="btn5"> 
+            <button>&#128515; </button>
+        </div> -->
+
+        <script>
+            var modal = document.getElementById("myModal");
+            var task = document.getElementById("myBtn");
+            var span = document.getElementByClassName("close")[0];
+
+            task.onclick = function(){
+                modal.style.display= "block";
+            }
+
+            span.onclick = function(){
+                modal.style.display = "none";
+            }
+
+            window.onclick = function(event){
+                if (event.target == modal){
+                    modal.style.display ="none";
+                }
+            }
+        </script>
+    </body>
+</html>
