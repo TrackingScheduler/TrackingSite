@@ -109,7 +109,7 @@ h3 {text-align: center;}
 
 /* Add a background color on hover */
 .btn-group button:hover {
-  background-color: #71797E;
+  background-color: rgba(0,0,0,0.2);
 }
 
 .btn1 button {background-color:rgba(245, 57, 57, 0.8)}
