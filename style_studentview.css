@@ -3,12 +3,21 @@
   }
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #a5a5a5;
+  background-color: #1F2933;
 }
 
-h1 {text-align: center;}
-h2 {text-align: center;}
-h3 {text-align: center;}
+h1 {
+  text-align: center;
+  color: #9AA5B1;
+}
+h2 {
+  text-align: center;
+  color: #9AA5B1;
+}
+h3 {
+  text-align: center;
+  color: #9AA5B1;
+}
 
 .modal {
   display: none; /* Hidden by default */
