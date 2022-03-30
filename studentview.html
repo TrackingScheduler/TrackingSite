@@ -4,17 +4,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Tracking Student View</title>
   <link rel="stylesheet" href="style_studentview.css">
-  <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-  />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!-- <link rel=stylesheet href=https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css> -->
+
+  <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-P4N73ZX');</script>
+  <!-- End Google Tag Manager -->
+
 </head>
 <body>
-  <!-- <script src="main.js"></script> -->
+
+  <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P4N73ZX"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  
   <h1>Tracking Schedule Test</h1>
   <h3>Monday</h3>  
   <div class="TaskList">
-    <button id="myBtn1">
+    <button type="button" data-toggle="modal" data-target="#myModal">
       <span>Task 1<br>8:00-9:00 AM</span>
     </button>
     <button id="myBtn2">
@@ -31,11 +45,16 @@
     </button>
   </div>
     
-  <div id="myModal" class="modal">
-      <div class="modal-content">
-          <span class="close">&times;</span>
-
-          <img class="recipe-card" src="images/wash_hands_example.jpg">
+  <div id="myModal" class="modal" role="dialog">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <span class="close">&times;</span>
+          </div>
+          <div class="modal-body">
+            <img class="recipe-card" src="images/wash_hands_example.jpg">
+          </div>
+        </div>
       </div>
   </div>
   <h1>Emotion Input</h1>
@@ -58,24 +77,6 @@
       </div>
   </div>
 
-  <script>
-  var modal = document.getElementById("myModal");
-  var task = document.getElementById("myBtn1");
-  var span = document.getElementsByClassName("close")[0];
 
-  task.onclick = function() {
-      modal.style.display= "block";
-  }
-
-  span.onclick = function() {
-      modal.style.display = "none";
-  }
-
-  window.onclick = function(event) {
-      if (event.target == modal){
-          modal.style.display ="none";
-      }
-  }
-  </script>
 </body>
 
