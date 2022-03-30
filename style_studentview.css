@@ -43,6 +43,10 @@ h3 {
   width: 80%;
 }
 
+.recipe-card{
+  margin:0 auto;
+}
+
 /* The Close Button */
 .close {
   color: #aaaaaa;
