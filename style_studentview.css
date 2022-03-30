@@ -40,11 +40,13 @@ h3 {
   margin: auto;
   padding: 20px;
   border: 1px solid #888;
-  width: 80%;
 }
 
-.recipe-card{
-  margin:0 auto;
+.recipe-card {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 80vh;
 }
 
 /* The Close Button */
