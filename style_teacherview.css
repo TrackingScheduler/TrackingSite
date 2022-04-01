@@ -2,3 +2,16 @@
     box-sizing: border-box;
   }
 
+
+.table {
+  font-size: 2rem;
+  color: #9AA5B1;
+  padding: 2rem;
+  text-align: center;
+  width: 100%;
+  margin-left: 2rem;
+}
+.table th, td{
+  padding: 1rem;
+}
+
