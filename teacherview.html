@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Tracking Homepage</title>
+    <title>Teacher View</title>
     <link rel="stylesheet" href="/css/style_teacherview.css">
     <link
         rel="stylesheet"
@@ -18,35 +18,48 @@
             <div class="line line-2"></div>
             <div class="line line-3"></div>
         </div>
-        <div class="table">
-            <table>
-                <tr>
-                    <th>Task</th>
-                    <th>Time</th>
-                    <th>1 Rating</th>
-                    <th>2 Rating</th>
-                    <th>3 Rating</th>
-                    <th>4 Rating</th>
-                    <th>5 Rating</th>
-                    <th>Prompted Entry</th>
-                    <th>Stop Pushes</th>
-                </tr>
-                <tr>
-                    <td>Task 1</td>
-                    <td>8:00-9:00</td>
-                    <td id="feelLowD">0</td>
-                    <td id="feelMidLowD">0</td>
-                    <td id="feelMidD">0</td>
-                    <td id="feelMidHighD">0</td>
-                    <td id="feelHighD">0</td>
-                    <td>0</td>
-                    <td>0</td>
-                </tr>
+
+            <label for="taskEntry">Task Name</label>
+            <input type="text" id="taskEntry" name="taskEntry"><br><br>
+
+            <label for="startEntry">Start Time</label>
+            <input type="text" id="startEntry" name="startEntry"><br><br>
+
+            <label for="endEntry">End Time</label>
+            <input type="text" id="endEntry" name="endEntry"><br><br>
+
+            <label for="descriptionEntry">Description</label>
+            <input type="text" id="descriptionEntry" name="descriptionEntry"><br><br>
+
+            <button onclick="addRow()">Add Task</button>
+
+        <div>
+            <table id="taskTable">
+                <thead>
+                    <th>Task Name</th>
+                    <th>Start Time</th>
+                    <th>End Time</th>
+                    <th>Description</th>
+                </thead>
             </table>
 
         </div>
     </div>
 
-    <script src="/js/main.js"></script>
+    <script>
+        function addRow() {
+            var table = document.getElementById("taskTable");
+            var row = table.insertRow(-1);
+            var taskName = row.insertCell(0);
+            var startTime = row.insertCell(1);
+            var endTime = row.insertCell(2);
+            var description = row.insertCell(3);
+
+            taskName.innerHTML = document.getElementById('taskEntry').value;
+            startTime.innerHTML = document.getElementById('startEntry').value;
+            endTime.innerHTML = document.getElementById('endEntry').value;
+            description.innerHTML = document.getElementById('descriptionEntry').value;
+        }
+    </script>
 </body>
 </html>
