@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset=“UTF-8”>
+        <meta name=“viewport” content=“width=device-width, initial-scale=1.0”>
+        <meta http-equiv=“X-UA-Compatible” content=“ie=edge”>
+        <title>Schedule Creation Tool</title>
+        <script type="text/javascript" src="teacherview_script.js"></script>
+        <link rel="stylesheet" href="style_teacherview.css"></link>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    </head>
+    <body>
+        <h1 align="center">Schedule Creation Tool</h1>
+        <div id="wrapper" class = "container">
+        <table align='center' cellspacing=2 cellpadding=5 id="data_table" border=1>
+            <thead>
+                <th>Task Name</th>
+                <th>Start Time</th>
+                <th>End Time</th>
+            </thead>
+
+            <tbody id="tbody"></tbody>
+            <tr>
+                <td><input type="text" id="new_name"></td>
+                <td><input type="text" id="new_start"></td>
+                <td><input type="text" id="new_end"></td>
+                <td><input type="button" class="add" onclick="add_row();" value="Add Row"></td>
+            </tr>
+        </table>
+        <br>
+        <button type="button" onclick="tableToCSV()">Save Schedule</button>
+        </div>
+        <script>
+            // Import the functions you need from the SDKs you need
+            import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js";
+            import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-analytics.js";
+            // TODO: Add SDKs for Firebase products that you want to use
+            // https://firebase.google.com/docs/web/setup#available-libraries
+
+            // Your web app's Firebase configuration
+            // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+            const firebaseConfig = {
+                apiKey: "AIzaSyBZoAJ1-Td_aTyUMjXxc6qzXRAA1H4LLHM",
+                authDomain: "tracking-scheduler.firebaseapp.com",
+                projectId: "tracking-scheduler",
+                storageBucket: "tracking-scheduler.appspot.com",
+                messagingSenderId: "702964503957",
+                appId: "1:702964503957:web:087c898a318ee89366d29c",
+                measurementId: "G-JSXGPYZBMQ"
+            };
+
+            // Initialize Firebase
+            const app = initializeApp(firebaseConfig);
+            const analytics = getAnalytics(app);
+        </script>
+    </body>
+</html>
