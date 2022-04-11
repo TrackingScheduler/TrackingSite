@@ -1,15 +1,44 @@
 * {
     box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+    font: Arial;
+    margin:0;
+    
   }
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #fff;
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
 }
 
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align:center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color:black;
+}
+
+.topnav a.active {
+  background-color: #1F2933;
+  color:white;
+}
+
+
+body {
+  background-color: #a9b3bd;
+}
 h1 {
-  font-size: 2vh;
+  font-size: 3vh;
   text-align: center;
   color: #1F2933;
+  padding: 10px;
 }
 h2 {
   text-align: center;
@@ -19,6 +48,13 @@ h3 {
   font-size: 2vh;
   text-align: center;
   color: #1F2933;
+}
+
+.head {
+  background-color:#a9b3bd;
+  width:100%;
+  margin: auto;
+  
 }
 
 .modal {
@@ -42,6 +78,9 @@ h3 {
   margin: auto;
   padding: 20px;
   border: 1px solid #888;
+  width: 60%;
+  height:40%;
+  border-radius:5px;
 }
 
 .recipe-card {
@@ -68,21 +107,26 @@ h3 {
 
 .TaskList {
     overflow: auto;
-    white-space: nowrap;  
+    white-space: nowrap;
+    background-color:#a9b3bd;
+    width: 100%;
+    padding:5px;
+    box-shadow: 5px 6px 8px rgba(0, 0, 0, 0.2);
 }
 
 .TaskList button {
     display: inline-block;
-    margin: 0.5vh;
-    color: black;
+    margin: 0.4vh;
+    /* color: black; */
     text-align: center;
     padding: 50px;
     text-decoration: none;
     width: 30%;
     height: 40vh;
-    background-color: #f1f1f1;
-    border-radius: 7px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color:#F5F5F5;
+;
+    border-radius: 4px;
+    box-shadow: 5px 6px 8px rgba(0, 0, 0, 0.2);
 }
 
 .TaskList button:hover {background-color: #777;}
@@ -103,9 +147,13 @@ h3 {
 }}
 
 .btn-group{
-  text-align:center;
-  display: flex;
-  justify-content: center;
+  margin: auto;
+  width: 60%;
+  background-color:#747b81;
+  padding: 10px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 5px 6px 8px rgba(0, 0, 0, 0.2);
 }
 
 .btn-group button {
@@ -116,9 +164,9 @@ h3 {
     float: left; 
     border-radius: 6px;
     margin: 5px;
-    height:15vh;
+    height:8vh;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    font-size: 8vh;
+    font-size: 4vh;
     text-align: center; 
     text-shadow: 0px 0px 5px black;
 }
@@ -132,13 +180,28 @@ h3 {
 
 /* Add a background color on hover */
 .btn-group button:hover {
-  background-color: rgba(0,0,0,0.2);
+  background-color:rgba(119, 119, 119, 0.397);
 }
 
-.btn1 button {background-color:rgba(245, 57, 57, 0.8)}
-.btn2 button {background-color:rgba(255, 132, 40, 0.8)}
-.btn3 button {background-color:rgba(255, 251, 30, 0.808)}
-.btn4 button {background-color:rgba(66, 135, 245, 0.8)}
-.btn5 button {background-color:rgba(112, 236, 55, 0.8)}
-.btnStop button {background-color:rgba(245, 57, 57, 0.8)}
-.btnStop img {width: 8vh;}
+.btn1 button {background-color:rgba(245, 57, 57, 1)}
+.btn2 button {background-color:rgba(255, 132, 40, 1)}
+.btn3 button {background-color:rgba(248, 246, 96, 1)}
+.btn4 button {background-color:rgba(87, 146, 241, 1)}
+.btn5 button {background-color:rgba(135, 231, 87, 1)}
+
+.btnStop{float: right;}
+.btnStop button {background-color:rgba(245, 57, 57, 1)}
+.btnStop img {height: 5vh;}
+
+
+.TaskName {
+  font-size:1.2rem;
+  font-weight: 600;
+}
+
+.Time {
+  font-size:1rem;
+}
+.cardImage {
+  height: 8vh;
+}
