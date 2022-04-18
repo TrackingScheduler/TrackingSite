@@ -166,7 +166,7 @@ h3 {
     margin: 10px;
     height:10vh;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    font-size: 4vh;
+    font-size: 3vh;
     text-align: center; 
     text-shadow: 0px 0px 5px black;
 }
@@ -191,7 +191,7 @@ h3 {
 
 .btnStop{float: right;}
 .btnStop button {background-color:rgba(245, 57, 57, 1)}
-.btnStop img {height: 4vh;}
+.btnStop img {height: 3vh;}
 
 
 .TaskName {
