@@ -122,7 +122,7 @@ h3 {
     padding: 50px;
     text-decoration: none;
     width: 30%;
-    height: 40vh;
+    height: 80vh;
     background-color:#F5F5F5;
 ;
     border-radius: 4px;
@@ -146,7 +146,7 @@ h3 {
     margin-bottom: 20px;
 }}
 
-.btn-group{
+/* .btn-group{
   margin: auto;
   width: 60%;
   background-color:#747b81;
@@ -157,13 +157,11 @@ h3 {
 }
 
 .btn-group button {
-    /* background-color: #f1f1f1; */
     color: black; 
-    padding: 10px 20px; /* Some padding */
+    padding: 10px 20px;
     cursor: pointer; 
     float: left; 
     border-radius: 6px;
-    /* margin: 10px; */
     height:12vh;
     width: 12%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -172,14 +170,12 @@ h3 {
     text-shadow: 0px 0px 5px black;
 }
 
-/* Clear floats (clearfix hack) */
 .btn-group:after {
   content: "";
   clear: both;
   display: table;
 }
 
-/* Add a background color on hover */
 .btn-group button:hover {
   background-color:rgba(119, 119, 119, 0.397);
 }
@@ -192,7 +188,7 @@ h3 {
 
 .btnStop{float: right;}
 .btnStop button {background-color:rgba(245, 57, 57, 1)}
-.btnStop img {height: 3vh;}
+.btnStop img {height: 3vh;} */
 
 
 .TaskName {
